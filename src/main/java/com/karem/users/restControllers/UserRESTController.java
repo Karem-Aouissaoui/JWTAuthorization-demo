@@ -17,7 +17,7 @@ public class UserRESTController {
 	
 	@Autowired UserRepository userRep;
 	
-	@RequestMapping(path = "all",method = RequestMethod.GET)
+	@RequestMapping(path = "/all",method = RequestMethod.GET)
 	public List<User> getAllUsers(){
 		return userRep.findAll();
 	}
